@@ -1,6 +1,7 @@
 
-// ArcadeCoin,
-// blink 3 brighty LED to light the Arcade Coin Part
+// ArcadeCoinsLights
+// Switch On TV, Computer X-Arcade custom setup
+// Blink 3 LEDs to light the Arcade Coin Part
 
 int LED1=13;    // 1F
 int LED2=12;    // 5F
@@ -33,97 +34,97 @@ void loop() {
   
   for(int i=0; i<3; i++)
   {
-    digitalWrite(LED1, LOW);    // turn the LED off by making the voltage LOW
-    digitalWrite(LED2, LOW);    // turn the LED off by making the voltage LOW
-    digitalWrite(LED3, LOW);    // turn the LED off by making the voltage LOW
+    digitalWrite(LED1, LOW);
+    digitalWrite(LED2, LOW);
+    digitalWrite(LED3, LOW);
     delay(400);
-    digitalWrite(LED1, HIGH);   // turn the LED on (HIGH is the voltage level)
-    digitalWrite(LED2, HIGH);   // turn the LED on (HIGH is the voltage level)
-    digitalWrite(LED3, HIGH);   // turn the LED on (HIGH is the voltage level)
+    digitalWrite(LED1, HIGH);
+    digitalWrite(LED2, HIGH);
+    digitalWrite(LED3, HIGH);
     delay(400);
   }
   
-  digitalWrite(LED1, LOW);    // turn the LED off by making the voltage LOW
-  digitalWrite(LED2, LOW);    // turn the LED off by making the voltage LOW
-  digitalWrite(LED3, LOW);    // turn the LED off by making the voltage LOW
+  digitalWrite(LED1, LOW);
+  digitalWrite(LED2, LOW);
+  digitalWrite(LED3, LOW);
   delay(400);
   
   for(int i=0; i<5; i++)
   {
-    digitalWrite(LED1, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED2, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED3, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED1, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
-    digitalWrite(LED2, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
-    digitalWrite(LED3, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
-    digitalWrite(LED3, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED2, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED1, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED3, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
-    digitalWrite(LED2, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
-    digitalWrite(LED1, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
+    digitalWrite(LED1, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED2, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED3, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED1, LOW);
+    delay(blink_delay);
+    digitalWrite(LED2, LOW);
+    delay(blink_delay);
+    digitalWrite(LED3, LOW);
+    delay(blink_delay);
+    digitalWrite(LED3, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED2, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED1, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED3, LOW);
+    delay(blink_delay);
+    digitalWrite(LED2, LOW);
+    delay(blink_delay);
+    digitalWrite(LED1, LOW);
+    delay(blink_delay);
   }
   
   for(int i=0; i<5; i++)
   {
-    digitalWrite(LED1, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED1, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
-    digitalWrite(LED2, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED2, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
-    digitalWrite(LED3, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED3, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
+    digitalWrite(LED1, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED1, LOW);
+    delay(blink_delay);
+    digitalWrite(LED2, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED2, LOW);
+    delay(blink_delay);
+    digitalWrite(LED3, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED3, LOW);
+    delay(blink_delay);
   }
   
   for(int i=0; i<5; i++)
   {
-    digitalWrite(LED3, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED3, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
-    digitalWrite(LED2, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED2, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
-    digitalWrite(LED1, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(blink_delay);         // wait
-    digitalWrite(LED1, LOW);    // turn the LED off by making the voltage LOW
-    delay(blink_delay);         // wait
+    digitalWrite(LED3, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED3, LOW);
+    delay(blink_delay);
+    digitalWrite(LED2, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED2, LOW);
+    delay(blink_delay);
+    digitalWrite(LED1, HIGH);
+    delay(blink_delay);
+    digitalWrite(LED1, LOW);
+    delay(blink_delay);
   }
   delay(150);
   
   for(int i=0; i<100; i++)
   {
     int ranpin = random(LED3, LED1+1);
-    if(digitalRead(ranpin)==HIGH) digitalWrite(ranpin, LOW);    // turn the LED off by making the voltage LOW
-    else digitalWrite(ranpin, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(100);         // wait
+    if(digitalRead(ranpin)==HIGH) digitalWrite(ranpin, LOW);
+    else digitalWrite(ranpin, HIGH);
+    delay(100);
   }
   
-  digitalWrite(LED1, LOW);    // turn the LED off by making the voltage LOW
-  digitalWrite(LED2, LOW);    // turn the LED off by making the voltage LOW
-  digitalWrite(LED3, LOW);    // turn the LED off by making the voltage LOW
+  digitalWrite(LED1, LOW);
+  digitalWrite(LED2, LOW);
+  digitalWrite(LED3, LOW);
   delay(1000);
-  digitalWrite(LED1, HIGH);   // turn the LED on (HIGH is the voltage level)
-  digitalWrite(LED2, HIGH);   // turn the LED on (HIGH is the voltage level)
-  digitalWrite(LED3, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED1, HIGH);
+  digitalWrite(LED2, HIGH);
+  digitalWrite(LED3, HIGH);
   delay(20000);
 }
 
@@ -148,14 +149,14 @@ void first_run() {
   digitalWrite(Relay1, LOW);
   delay(400);
   digitalWrite(Relay1, HIGH);
-  digitalWrite(LED1, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED1, HIGH);
   delay(5000);
 
   // Simulate the Computer PowerSWitch button with a relay
   digitalWrite(Relay2, LOW);
   delay(400);
   digitalWrite(Relay2, HIGH);
-  digitalWrite(LED2, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED2, HIGH);
   delay(10000);
 
   // Simulate the X-Arcade switch with a relay
@@ -166,6 +167,6 @@ void first_run() {
   digitalWrite(Relay3, LOW);
   delay(400);
   digitalWrite(Relay3, HIGH);
-  digitalWrite(LED3, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED3, HIGH);
   delay(400);
 }
