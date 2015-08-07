@@ -127,10 +127,10 @@ void loop() {
   delay(20000);
 }
 
-// Play Sound
 void first_run() {
   int speed = 50;
 
+  // Play Sound
   delay(500);
   for(int beep=0; beep<8; beep++)
   {
