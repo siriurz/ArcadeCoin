@@ -21,7 +21,7 @@ void setup() {
   digitalWrite(Relay3, HIGH);
   
   // initialize digital pins 11, 12, 13 as an output.
-  // /!\  Random routine based on Min=LED1 Max=LED3+1  /!\
+  // /!\  Random routine based on Min=LED3 Max=LED1+1  /!\
   pinMode(LED3, OUTPUT);
   pinMode(LED2, OUTPUT);
   pinMode(LED1, OUTPUT);
